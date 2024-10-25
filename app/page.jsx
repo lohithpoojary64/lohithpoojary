@@ -14,10 +14,12 @@ const roboto = Protest_Guerrilla({
 export default function Home() {
 
 
-  
-  const handleClick = () => {
-    router.push("/home");
-  };
+    setTimeout(() => {
+      router.push("/home")
+    }, 2000);  
+
+    
+ 
 
   const router = useRouter();
 
@@ -261,9 +263,7 @@ export default function Home() {
           delay: 0.9,
         }}
       >
-        <Button className="bg-transparent text-white" onClick={handleClick}>
-          Continue
-        </Button>
+
       </motion.div>
     </main>
   );
